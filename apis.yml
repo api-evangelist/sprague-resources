@@ -1,7 +1,12 @@
 aid: sprague-resources
-url: https://raw.githubusercontent.com/api-evangelist/sprague-resources/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/sprague-resources/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.sprague-resources.com
+description: >-
+  Sprague Resources was a major independent supplier of energy products and material
+  handling services for commercial and industrial customers in the northeastern United
+  States before being acquired.
