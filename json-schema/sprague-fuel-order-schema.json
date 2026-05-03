@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api.spragueenergy.com/schemas/fuel-order",
+  "title": "Sprague Fuel Order",
+  "description": "Schema for a Sprague Energy fuel delivery order for refined petroleum products (heating oil, diesel, gasoline, kerosene, biofuels) delivered to commercial and industrial customers in the northeastern United States.",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "string",
+      "description": "Unique order identifier",
+      "examples": ["SPR-2026-001234"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "scheduled", "in_transit", "delivered", "cancelled"],
+      "description": "Current order status"
+    },
+    "order_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the order was placed"
+    },
+    "delivery_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Scheduled or actual delivery date"
+    },
+    "customer": {
+      "type": "object",
+      "description": "Customer account information",
+      "properties": {
+        "account_id": {"type": "string"},
+        "name": {"type": "string"},
+        "contact_name": {"type": "string"},
+        "phone": {"type": "string"},
+        "email": {"type": "string", "format": "email"}
+      },
+      "required": ["account_id", "name"]
+    },
+    "delivery_location": {
+      "type": "object",
+      "description": "Delivery site address",
+      "properties": {
+        "name": {"type": "string", "description": "Site or facility name"},
+        "street": {"type": "string"},
+        "city": {"type": "string"},
+        "state": {"type": "string"},
+        "zip": {"type": "string"},
+        "country": {"type": "string", "default": "US"}
+      },
+      "required": ["street", "city", "state", "zip"]
+    },
+    "product": {
+      "type": "object",
+      "description": "Fuel product details",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "heating_oil",
+            "diesel",
+            "ultra_low_sulfur_diesel",
+            "gasoline",
+            "kerosene",
+            "biofuel",
+            "bunker_fuel",
+            "residual_fuel"
+          ],
+          "description": "Type of petroleum product"
+        },
+        "blend": {
+          "type": "string",
+          "description": "Fuel blend specification (e.g., B5, B20, ULSD)"
+        },
+        "sulfur_content": {
+          "type": "string",
+          "description": "Sulfur content specification"
+        }
+      },
+      "required": ["type"]
+    },
+    "quantity": {
+      "type": "object",
+      "description": "Order quantity",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Quantity ordered"
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["gallons", "barrels", "liters"],
+          "default": "gallons"
+        },
+        "fill_type": {
+          "type": "string",
+          "enum": ["keep_full", "will_call", "automatic"],
+          "description": "Whether to fill to capacity or deliver specified amount"
+        }
+      },
+      "required": ["amount", "unit"]
+    },
+    "pricing": {
+      "type": "object",
+      "description": "Order pricing details",
+      "properties": {
+        "price_per_unit": {
+          "type": "number",
+          "description": "Price per gallon, barrel, or liter"
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD"
+        },
+        "pricing_type": {
+          "type": "string",
+          "enum": ["fixed", "index", "market"],
+          "description": "How the price is determined"
+        },
+        "total_amount": {
+          "type": "number",
+          "description": "Total order value"
+        },
+        "fuel_surcharge": {
+          "type": "number",
+          "description": "Fuel surcharge applied to delivery"
+        }
+      }
+    },
+    "terminal": {
+      "type": "object",
+      "description": "Source terminal for the delivery",
+      "properties": {
+        "terminal_id": {"type": "string"},
+        "name": {"type": "string"},
+        "location": {"type": "string"}
+      }
+    },
+    "driver_notes": {
+      "type": "string",
+      "description": "Special delivery instructions for the driver"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["order_id", "status", "customer", "delivery_location", "product", "quantity"]
+}

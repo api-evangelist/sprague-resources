@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "sprague": "https://spragueenergy.com/vocab#",
+    "energy": "https://schema.org/EnergyConsumptionDetails",
+    "FuelOrder": "sprague:FuelOrder",
+    "FuelProduct": "sprague:FuelProduct",
+    "Terminal": "sprague:Terminal",
+    "EnergySupplier": "Organization",
+    "order_id": "orderNumber",
+    "status": "orderStatus",
+    "order_date": "orderDate",
+    "delivery_date": "expectedArrivalFrom",
+    "customer": "customer",
+    "account_id": "identifier",
+    "delivery_location": "deliveryAddress",
+    "street": "streetAddress",
+    "city": "addressLocality",
+    "state": "addressRegion",
+    "zip": "postalCode",
+    "country": "addressCountry",
+    "product": "orderedItem",
+    "quantity": "orderQuantity",
+    "amount": "value",
+    "unit": "unitText",
+    "pricing": "priceSpecification",
+    "price_per_unit": "price",
+    "currency": "priceCurrency",
+    "total_amount": "totalPrice",
+    "terminal": "seller",
+    "driver_notes": "disambiguatingDescription",
+    "heating_oil": "sprague:HeatingOil",
+    "diesel": "sprague:Diesel",
+    "ultra_low_sulfur_diesel": "sprague:UltraLowSulfurDiesel",
+    "gasoline": "sprague:Gasoline",
+    "kerosene": "sprague:Kerosene",
+    "biofuel": "sprague:Biofuel",
+    "bunker_fuel": "sprague:BunkerFuel",
+    "SpraguePORT": {
+      "@id": "sprague:SpraguePORT",
+      "@type": "@id"
+    },
+    "NaturalGas": {
+      "@id": "sprague:NaturalGas",
+      "@type": "@id"
+    },
+    "Electricity": {
+      "@id": "sprague:Electricity",
+      "@type": "@id"
+    }
+  }
+}

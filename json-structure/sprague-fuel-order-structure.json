@@ -1,0 +1,75 @@
+{
+  "title": "Sprague Fuel Order Structure",
+  "description": "Hierarchical structure of a Sprague Energy fuel delivery order",
+  "type": "object",
+  "fields": [
+    {"name": "order_id", "type": "string", "description": "Unique order reference (SPR-YYYY-NNNNNN)"},
+    {"name": "status", "type": "enum", "values": ["pending", "scheduled", "in_transit", "delivered", "cancelled"]},
+    {"name": "order_date", "type": "date", "description": "ISO 8601 date placed"},
+    {"name": "delivery_date", "type": "date", "description": "Scheduled or actual delivery date"},
+    {
+      "name": "customer",
+      "type": "object",
+      "fields": [
+        {"name": "account_id", "type": "string", "required": true},
+        {"name": "name", "type": "string", "required": true},
+        {"name": "contact_name", "type": "string"},
+        {"name": "phone", "type": "string"},
+        {"name": "email", "type": "string", "format": "email"}
+      ]
+    },
+    {
+      "name": "delivery_location",
+      "type": "object",
+      "fields": [
+        {"name": "name", "type": "string", "description": "Site or facility name"},
+        {"name": "street", "type": "string", "required": true},
+        {"name": "city", "type": "string", "required": true},
+        {"name": "state", "type": "string", "required": true},
+        {"name": "zip", "type": "string", "required": true},
+        {"name": "country", "type": "string", "default": "US"}
+      ]
+    },
+    {
+      "name": "product",
+      "type": "object",
+      "fields": [
+        {"name": "type", "type": "enum", "values": ["heating_oil", "diesel", "ultra_low_sulfur_diesel", "gasoline", "kerosene", "biofuel", "bunker_fuel", "residual_fuel"]},
+        {"name": "blend", "type": "string"},
+        {"name": "sulfur_content", "type": "string"}
+      ]
+    },
+    {
+      "name": "quantity",
+      "type": "object",
+      "fields": [
+        {"name": "amount", "type": "number", "required": true},
+        {"name": "unit", "type": "enum", "values": ["gallons", "barrels", "liters"]},
+        {"name": "fill_type", "type": "enum", "values": ["keep_full", "will_call", "automatic"]}
+      ]
+    },
+    {
+      "name": "pricing",
+      "type": "object",
+      "fields": [
+        {"name": "price_per_unit", "type": "number"},
+        {"name": "currency", "type": "string", "default": "USD"},
+        {"name": "pricing_type", "type": "enum", "values": ["fixed", "index", "market"]},
+        {"name": "total_amount", "type": "number"},
+        {"name": "fuel_surcharge", "type": "number"}
+      ]
+    },
+    {
+      "name": "terminal",
+      "type": "object",
+      "fields": [
+        {"name": "terminal_id", "type": "string"},
+        {"name": "name", "type": "string"},
+        {"name": "location", "type": "string"}
+      ]
+    },
+    {"name": "driver_notes", "type": "string"},
+    {"name": "created_at", "type": "datetime"},
+    {"name": "updated_at", "type": "datetime"}
+  ]
+}

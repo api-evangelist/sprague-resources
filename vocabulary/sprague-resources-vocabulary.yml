@@ -1,0 +1,176 @@
+vocabulary:
+  name: Sprague Resources Energy Vocabulary
+  description: >-
+    Domain vocabulary for Sprague Energy's petroleum distribution, natural gas supply,
+    electricity procurement, and materials handling operations across the northeastern
+    United States and Quebec.
+  version: "1.0.0"
+  created: "2026-05-02"
+  modified: "2026-05-02"
+  provider: Sprague Resources / Hartree Partners
+  domain: Energy Distribution
+
+terms:
+  - term: Heating Oil
+    definition: >-
+      A refined petroleum product (No. 2 distillate fuel oil) used to heat residential
+      and commercial buildings. Sprague distributes heating oil throughout the northeastern
+      United States as one of its primary products.
+    tags: [Petroleum, Fuel, Residential, Commercial]
+    aliases: [home heating oil, fuel oil, No. 2 oil]
+
+  - term: Ultra-Low Sulfur Diesel
+    definition: >-
+      Diesel fuel with sulfur content of 15 parts per million or less, required by EPA
+      regulations for on-road vehicles. Sprague distributes ULSD from terminals throughout
+      the Northeast for commercial fleets, trucking, and construction.
+    tags: [Diesel, Petroleum, Regulatory, Fleet]
+    aliases: [ULSD, ultra-low sulfur diesel, clean diesel]
+
+  - term: Biofuel
+    definition: >-
+      Fuel derived from renewable biological sources, often blended with petroleum diesel
+      (B5, B20) to reduce emissions. Sprague offers biofuel blends as part of its
+      sustainability product mix.
+    tags: [Renewable, Fuel, Sustainability]
+    aliases: [biodiesel, bio-blend, B5, B20]
+
+  - term: Bunker Fuel
+    definition: >-
+      Heavy fuel oil used to power ocean-going ships and marine vessels. Sprague provides
+      bunker fuel services from its port terminal facilities, leveraging its marine logistics
+      infrastructure.
+    tags: [Marine, Fuel, Petroleum]
+    aliases: [marine fuel, heavy fuel oil, IFO]
+
+  - term: Terminal
+    definition: >-
+      A port facility where petroleum products are received from tankers, stored in large
+      tanks, and distributed to customers via truck, pipeline, or barge. Sprague operates
+      20+ terminal facilities across the northeastern US and Quebec.
+    tags: [Infrastructure, Logistics, Port]
+    aliases: [fuel terminal, storage terminal, distribution terminal]
+
+  - term: SpraguePORT
+    definition: >-
+      Sprague Energy's proprietary electronic customer portal providing one-stop digital
+      access to account management, order history, invoice details, market data, and
+      energy management tools for commercial customers and channel partners.
+    tags: [Technology, Customer Portal, Digital]
+    aliases: [customer portal, MyAccount]
+
+  - term: Sprague Real-time
+    definition: >-
+      Sprague Energy's online pricing tool described as "the industry's best and simplest
+      online pricing tool" for resellers and brokers to access current market pricing
+      for petroleum products.
+    tags: [Pricing, Technology, Market Data]
+    aliases: [real-time pricing, market pricing tool]
+
+  - term: Keep Full Service
+    definition: >-
+      A fuel delivery program where Sprague monitors customer tank levels and automatically
+      schedules deliveries to keep tanks at or above a minimum threshold without requiring
+      the customer to place individual orders.
+    tags: [Service, Automated Delivery, Fuel]
+    aliases: [automatic delivery, tank monitoring, will-fill]
+
+  - term: Will Call
+    definition: >-
+      A fuel delivery arrangement where the customer contacts Sprague to request delivery
+      when needed, rather than receiving automatic scheduled deliveries.
+    tags: [Service, Delivery, Customer Managed]
+
+  - term: Natural Gas Supply
+    definition: >-
+      Sprague's commodity procurement service providing natural gas to commercial and
+      industrial customers in the Northeast. Sprague offers customized supply plans
+      based on market analysis and customer load profiles.
+    tags: [Natural Gas, Commodity, Energy]
+
+  - term: Electricity Procurement
+    definition: >-
+      Sprague's service for sourcing and purchasing electricity for commercial customers,
+      including brokerage services following the 2026 acquisition of Global Companies'
+      natural gas and electricity brokerage business.
+    tags: [Electricity, Procurement, Energy]
+
+  - term: Residual Fuel
+    definition: >-
+      Heavy petroleum products (No. 5 and No. 6 fuel oils) remaining after lighter
+      fractions are distilled from crude oil. Used in industrial boilers and power
+      generation. Sprague distributes residual fuels via its terminal network.
+    tags: [Petroleum, Industrial, Fuel]
+    aliases: [heavy fuel oil, fuel oil No. 5, fuel oil No. 6]
+
+  - term: Hartree Partners
+    definition: >-
+      The commodity trading and asset management company that acquired Sprague Resources LP
+      in 2024, becoming Sprague's majority owner. Hartree is headquartered in New York and
+      operates in global energy commodity markets.
+    tags: [Corporate, Ownership, Private Equity]
+
+  - term: Materials Handling
+    definition: >-
+      Sprague's terminal and logistics services for handling bulk and breakbulk cargo beyond
+      petroleum products, including wind turbine components, asphalt, and other industrial
+      materials transported by ship through Sprague's port terminals.
+    tags: [Logistics, Port, Infrastructure]
+
+  - term: Index Pricing
+    definition: >-
+      A pricing mechanism where fuel prices are tied to a market index (such as NYMEX
+      heating oil futures or rack prices), adjusting automatically as market conditions
+      change. Offered as an alternative to fixed-price contracts.
+    tags: [Pricing, Market, Commodity]
+    aliases: [market-indexed pricing, floating price, index-linked]
+
+  - term: Fixed Price Contract
+    definition: >-
+      A fuel supply agreement where the price per unit is locked in for a specified period
+      or volume, providing customers price certainty regardless of market fluctuations.
+    tags: [Pricing, Contract, Risk Management]
+
+classifications:
+  product_types:
+    - heating_oil
+    - diesel
+    - ultra_low_sulfur_diesel
+    - gasoline
+    - kerosene
+    - biofuel
+    - bunker_fuel
+    - residual_fuel
+    - natural_gas
+    - electricity
+  pricing_types:
+    - fixed
+    - index
+    - market
+    - cap
+  delivery_types:
+    - keep_full
+    - will_call
+    - automatic
+    - scheduled
+  customer_segments:
+    - commercial
+    - industrial
+    - residential
+    - reseller
+    - broker
+    - government
+    - fleet
+  service_areas:
+    - Maine
+    - New Hampshire
+    - Vermont
+    - Massachusetts
+    - Rhode Island
+    - Connecticut
+    - New York
+    - New Jersey
+    - Pennsylvania
+    - Delaware
+    - Maryland
+    - Quebec
