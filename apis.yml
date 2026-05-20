@@ -65,6 +65,8 @@ apis:
         url: https://www.spragueenergy.com/
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/sprague-energy
   - type: Website
     url: https://www.spragueenergy.com
   - type: Customer Portal
