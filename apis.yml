@@ -65,6 +65,10 @@ apis:
         url: https://www.spragueenergy.com/
 
 common:
+  - type: DomainSecurity
+    url: security/sprague-resources-domain-security.yml
+  - url: https://www.spragueenergy.com/feed/
+    type: Blog
   - type: LinkedIn
     url: https://www.linkedin.com/company/sprague-energy
   - type: Website
