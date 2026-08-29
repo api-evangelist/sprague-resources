@@ -9,6 +9,17 @@ description: >-
   in 2024 and continues to expand through strategic acquisitions. While Sprague does not publish
   a public developer API, the company operates SpraguePORT, a digital customer portal for
   account management, pricing, and order history, and Sprague Real-time for market pricing.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
