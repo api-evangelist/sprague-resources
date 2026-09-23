@@ -1,7 +1,9 @@
 ---
 title: Sprague Resources LP (SRLP) - Revenue
 url: https://companiesmarketcap.com/sprague-resource-lp/revenue/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Sprague Resources" press release artificial intelligence'
 position: 5
 source: serpapi-google

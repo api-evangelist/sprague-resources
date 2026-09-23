@@ -1,7 +1,9 @@
 ---
 title: Sprague Resources announces acquisition of Coen Energy
 url: https://www.reuters.com/article/world/americas/sprague-resources-announces-acquisition-of-coen-energy-idUSASB0BK3D/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Sprague Resources" press release artificial intelligence'
 position: 1
 source: serpapi-google

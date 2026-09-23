@@ -1,7 +1,9 @@
 ---
 title: Adorys Velazquez | People
 url: https://www.bakerbotts.com/people/v/velazquez-adorys/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Sprague Resources" press release artificial intelligence'
 position: 4
 source: serpapi-google
