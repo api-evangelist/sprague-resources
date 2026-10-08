@@ -50,6 +50,12 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/sprague-resources/refs/heads/main/apis.yml
 apis: []
 common:
+  - type: Plans
+    url: plans/sprague-resources-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/sprague-resources-rate-limits.yml
+  - type: FinOps
+    url: finops/sprague-resources-finops.yml
   - type: DomainSecurity
     url: security/sprague-resources-domain-security.yml
   - url: https://www.spragueenergy.com/feed/
