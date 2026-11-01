@@ -64,61 +64,128 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Sprague Resources (operating as Sprague Energy) is one of the largest independent suppliers of energy products and related services in the northeastern United States and Quebec, founded in 1870. The company distributes refined fuel products (heating oil, diesel, gasoline, kerosene, biofuels), natural gas, and electricity to commercial and industrial customers, and operates 20+ port terminal facilities for materials handling. Sprague was acquired by Hartree Partners in 2024.
+Sprague Resources (operating as Sprague Energy) is one of the largest independent suppliers of energy products and related services in the northeastern United States and Quebec, founded in 1870. The company distributes refined fuel products (heating oil, diesel, gasoline, kerosene, biofuels), natural gas, and electricity to commercial and industrial customers, and operates 20+ port terminal facilities for materials handling. Sprague was acquired by Hartree Partners in 2024 and continues to expand through strategic acquisitions. While Sprague does not publish a public developer API, the company operates SpraguePORT, a digital customer portal for account management, pricing, and order history, and Sprague Real-time for market pricing.
 
-- **Website:** https://www.spragueenergy.com
-- **Customer Portal:** https://mysprague.com
+**Areas:** Energy · Petroleum · Natural Gas · Fuel Distribution · Materials Handling · Northeast
 
-## Business Overview
+## Sprague Resources on APIs.io
 
-Sprague serves 25,000+ customers across the Northeast with:
-- **Refined Petroleum Products:** Heating oil, diesel (ULSD), gasoline, kerosene, biofuels, bunker fuel
-- **Natural Gas Supply:** Commodity procurement with customized plans for commercial and industrial customers
-- **Electricity Procurement:** Energy brokerage services (expanded via 2026 Global Companies acquisition)
-- **Materials Handling:** Port terminal operations, bulk cargo, wind turbine components
-- **Terminal Network:** 20+ port facilities across the northeastern US and Quebec
+Everything profiled for Sprague Resources is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sprague-resources/](https://apis.io/providers/sprague-resources/)** — or go straight to one of the APIs or properties below.
 
-## Digital Platforms
+### Published properties
 
-### SpraguePORT
-Electronic customer portal providing:
-- Account management and order history
-- Real-time market data and pricing
-- Invoice access and reporting
-- Available for refined products and natural gas customers
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Sprague Real-time
-Online pricing tool for resellers and brokers to access current market pricing for petroleum products.
+#### JSON Schema (1)
 
-**Note:** Sprague Energy does not publish a public developer API. The SpraguePORT portal is a closed business-to-business system accessible only to Sprague customers and partners.
+The data models the API reads and writes.
 
-## Artifacts
+- [Sprague Fuel Order](https://apis.io/schemas/sprague-resources/sprague-fuel-order/)
 
-### JSON Schema
+#### JSON Structure (1)
 
-| Schema | Description |
+Data models expressed in JSON Structure.
+
+- [Sprague Fuel Order Structure](https://apis.io/json-structure/sprague-resources/sprague-fuel-order-structure/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Sprague Resources Context](https://apis.io/jsonld/sprague-resources/sprague-resources-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Sprague Resources Energy Vocabulary](https://apis.io/vocabularies/sprague-resources/sprague-resources-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Sprague Resources — jsonschema rules](https://apis.io/rules/sprague-resources/sprague-resources-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Sprague Resources Domain Security](https://apis.io/security/sprague-resources/sprague-resources-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Sprague Resources Plans Pricing](https://apis.io/plans/sprague-resources/sprague-resources-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Sprague Resources Rate Limits](https://apis.io/rate-limits/sprague-resources/sprague-resources-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Sprague Resources Finops](https://apis.io/finops/sprague-resources/sprague-resources-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.spragueenergy.com)
+- [Blog](https://www.spragueenergy.com/feed/)
+
+## API Evangelist rating
+
+**Kin Score 12.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| [sprague-fuel-order-schema.json](json-schema/sprague-fuel-order-schema.json) | Fuel delivery order schema with product type, quantity, pricing, and delivery details |
+| Discoverability | 48.2 |
+| Contract quality | 10.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 7.9 |
 
-### JSON Structure
+**Agent readiness 0.6** — human-only
 
-| Structure | Description |
+| Agent-readiness dimension | Result |
 |---|---|
-| [sprague-fuel-order-structure.json](json-structure/sprague-fuel-order-structure.json) | Hierarchical field map for fuel delivery orders |
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-### JSON-LD Context
+**Regulatory alignment 9.0** — Energy & Utilities
 
-| Context | Description |
-|---|---|
-| [sprague-resources-context.jsonld](json-ld/sprague-resources-context.jsonld) | Linked data context mapping Sprague vocabulary to schema.org |
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sprague-resources/](https://apis.io/providers/sprague-resources/).
 
-### Vocabulary
+## How this profile is made
 
-| Vocabulary | Description |
-|---|---|
-| [sprague-resources-vocabulary.yml](vocabulary/sprague-resources-vocabulary.yml) | Energy distribution vocabulary covering fuel types, pricing models, and service offerings |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Maintainers
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Sprague Resources: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sprague-resources/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
